@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <p>Button Clicked {count} times</p>
+        <p style={{ fontWeight: 'bold' }}>Button Clicked {count} times</p>
         <button onClick={clickB}>Click me</button>
     </div>
   )
