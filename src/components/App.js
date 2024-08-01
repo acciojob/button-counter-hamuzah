@@ -4,12 +4,17 @@ import './../styles/App.css';
 
 const App = () => {
   const[count,setCount] = useState(0)
+
+  function clickB(e){
+    e.preventDefault()
+    setCount(count + 1)
+  }
    
   return (
     <div>
         {/* Do not remove the main div */}
-        <p>{count}</p>
-        <button onClick={() => setCount(count+1)}>Click me</button>
+        <p>Button Clicked {count} times</p>
+        <button onClick={clickB}>Click me</button>
     </div>
   )
 }
